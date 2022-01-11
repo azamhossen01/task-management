@@ -23,6 +23,7 @@ class User extends Authenticatable
         'email',
         'password',
         'gender',
+        'photo',
         'team_id',
         'role_id',
         'created_by'

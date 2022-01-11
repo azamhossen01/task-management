@@ -21,4 +21,8 @@ class Project extends Model
     {
         return $this->hasMany(Task::class)->where('assign_to',$id)->get();
     }
+
+    public function team(){
+        return $this->belongsTo(Team::class);
+    }
 }
